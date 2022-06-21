@@ -1,7 +1,7 @@
 name: Auto Deploy GitHub Pages
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 env:
   SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
