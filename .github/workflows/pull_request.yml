@@ -16,13 +16,13 @@ jobs:
           node-version: 'v14.15.5'
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile
+        run: npm ci
       
       - name: Lint
-        run: yarn lint
+        run: npm run lint
       
-      - name: Unit Test
-        run: yarn test:unit
+        # - name: Unit Test
+        # run: yarn test:unit
         
-      - name: E2E Test
-        run: yarn test:e2e
+        # - name: E2E Test
+        # run: yarn test:e2e
